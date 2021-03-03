@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:background="@drawable/shadow"
+        android:gravity="center"
+        android:text="个人中心"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <LinearLayout
+        android:id="@+id/ll_my_login"
+        android:background="@drawable/shadow"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="30dp"
+            android:src="@drawable/headphoto"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+        </ImageView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+            <TextView
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:textSize="30sp"
+                android:text="登录/注册"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@drawable/ripple_click"
+            android:id="@+id/ll_personalcenter_data"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/send"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="我的发布"
+                    android:textSize="17dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=">"
+                android:textSize="25dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_height="1px"
+            android:background="#C3C1C1"
+            android:layout_width="320dp"
+            android:layout_gravity="center"></View>
+
+        <LinearLayout
+            android:background="@drawable/ripple_click"
+            android:id="@+id/ll_personalcenter_team"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/collect"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="收藏"
+                    android:textSize="17dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=">"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_height="1px"
+            android:background="#C3C1C1"
+            android:layout_width="320dp"
+            android:layout_gravity="center"></View>
+
+        <LinearLayout
+            android:background="@drawable/ripple_click"
+            android:id="@+id/ll_personalcenter_yueqiu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/feedback"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="反馈"
+                    android:textSize="17dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:text=">"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_height="1px"
+            android:background="#C3C1C1"
+            android:layout_width="320dp"
+            android:layout_gravity="center"></View>
+
+        <LinearLayout
+            android:background="@drawable/ripple_click"
+            android:id="@+id/ll_personalcenter_collect"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/setting"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="设置"
+                    android:textSize="17dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:text=">"
+                android:textSize="25dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

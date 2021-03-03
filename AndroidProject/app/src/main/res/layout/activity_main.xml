@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <!--选项卡所在布局-->
+            <LinearLayout
+                android:id="@+id/tab_widget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <!-- 全部 -->
+
+    </LinearLayout>
+
+        <!-- Fragment内容显示的帧布局 -->
+        <FrameLayout
+            android:id="@+id/tab_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:layout_above="@id/tab_widget1"
+            android:layout_below="@+id/ll_top" />
+        <FrameLayout
+            android:id="@+id/tab_contents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tab_widget1"
+            android:layout_below="@+id/ll_top"
+            android:visibility="gone"/>
+
+        <!-- 选项卡按钮所在布局 -->
+        <LinearLayout
+            android:id="@+id/tab_widget1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <!-- 首页 -->
+            <LinearLayout
+                android:id="@+id/tab_spec_main_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_main_home"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/cube" />
+
+                <TextView
+                    android:id="@+id/tv_main_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首页"
+                    android:textSize="10dp"
+                    android:textColor="#707070" />
+
+            </LinearLayout>
+            <!-- 发布 -->
+            <LinearLayout
+                android:id="@+id/tab_spec_main_send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_main_send"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/add" />
+
+                <TextView
+                    android:id="@+id/tv_main_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布"
+                    android:textColor="#707070"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <!-- 我的 -->
+            <LinearLayout
+                android:id="@+id/tab_spec_main_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_main_my"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/my" />
+
+                <TextView
+                    android:id="@+id/tv_main_my"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的"
+                    android:textColor="#707070"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
