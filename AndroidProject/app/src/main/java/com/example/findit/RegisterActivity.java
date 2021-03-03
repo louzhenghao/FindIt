@@ -61,6 +61,8 @@ public class RegisterActivity extends AppCompatActivity {
 
         setListeners();
 
+
+
         handler=new Handler(){
             @Override
             public void handleMessage(Message msg) {
