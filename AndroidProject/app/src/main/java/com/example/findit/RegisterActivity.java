@@ -83,6 +83,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
 
+
     private void findView(){
         okHttpClient = new OkHttpClient();
         ivEye = findViewById(R.id.iv_register_eye);
